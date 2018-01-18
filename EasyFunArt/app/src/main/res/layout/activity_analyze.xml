@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AnalyzeActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="#fcdc09"
+            android:orientation="horizontal"
+            android:padding="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#252525"
+                android:textStyle="bold"
+                android:textSize="8pt"
+                android:layout_centerInParent="true"
+                android:text="취향 변경"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:src="@drawable/btn_mypage_complete"
+                android:background="#fcdc09"
+                android:layout_alignParentRight="true"
+                android:id="@+id/check_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageView
+            android:paddingLeft="30dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/title_taste_info"
+            android:layout_width="250dp"
+            android:layout_height="130dp" />
+        <TextView
+            android:textColor="#95989a"
+            android:textSize="6pt"
+            android:paddingLeft="30dp"
+            android:paddingBottom="30dp"
+            android:text="EASY FUN ART가 더 정확하게 추천 해드릴게요"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#414141"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="8pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="성별"/>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_boy"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/mypage_preference_boy_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    android:id="@+id/preference_girl"
+                    android:background="@drawable/mypage_preference_girl_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="5pt"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="125dp"
+                    android:text="남자"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="5pt"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="74dp"
+                    android:text="여자"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#414141"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="8pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="연령대"/>
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_age1"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_age_off_1"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_age2"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_age_off_2"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+
+                <ImageButton
+                    android:id="@+id/preference_age3"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/mypage_preference_age_off_3" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_age4"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_age_off_4"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+
+                <ImageButton
+                    android:id="@+id/preference_age5"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_age_off_5" />
+
+                <ImageButton
+                    android:id="@+id/preference_age6"
+                    android:background="@drawable/mypage_preference_age_off_6"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#414141"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="8pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="장르"/>
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_genre1"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_genre_off_1"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_genre2"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_genre_off_2"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_genre3"
+                    android:background="@drawable/mypage_preference_genre_off_3"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_genre4"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_genre_off_4"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_genre5"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_genre_off_5"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_genre6"
+                    android:background="@drawable/mypage_preference_genre_off_6"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_genre7"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_genre_off_7"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_genre8"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_genre_off_8"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_genre9"
+                    android:background="@drawable/mypage_preference_genre_off_9"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_genre10"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_genre_off_10"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_genre11"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_genre_off_11"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_genre12"
+                    android:background="@drawable/mypage_preference_genre_off_12"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#414141"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="8pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="장소"/>
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_place1"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_place_off_1"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_place2"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_place_off_2"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_place3"
+                    android:background="@drawable/mypage_preference_place_off_3"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_place4"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_place_off_4"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_place5"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_place_off_5"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_place6"
+                    android:background="@drawable/mypage_preference_place_off_6"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_place7"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_place_off_7"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_place8"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_place_off_8"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_place9"
+                    android:background="@drawable/mypage_preference_place_off_9"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#414141"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="8pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="분위기"/>
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_love1"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_love_off_1"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_love2"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_love_off_2"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_love3"
+                    android:background="@drawable/mypage_preference_love_off_3"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_love4"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_love_off_4"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_love5"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_love_off_5"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_love6"
+                    android:background="@drawable/mypage_preference_love_off_6"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/preference_love7"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_love_off_7" />
+
+                <ImageButton
+                    android:id="@+id/preference_love8"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_love_off_8" />
+
+                <ImageButton
+                    android:id="@+id/preference_love9"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/mypage_preference_love_off_9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_love10"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_love_off_10"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_love11"
+                    android:background="@drawable/mypage_preference_love_off_11"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#414141"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="8pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="주제"/>
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_subject1"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_subject_off_1"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_subject2"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_subject_off_2"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_subject3"
+                    android:background="@drawable/mypage_preference_subject_off_3"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_subject4"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_subject_off_4"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_subject5"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_subject_off_5"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_subject6"
+                    android:background="@drawable/mypage_preference_subject_off_6"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_subject7"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_subject_off_7"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_subject8"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_subject_off_8"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_subject9"
+                    android:background="@drawable/mypage_preference_subject_off_9"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/preference_subject10"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_subject_off_10"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_subject11"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/mypage_preference_subject_off_11"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:id="@+id/preference_subject12"
+                    android:background="@drawable/mypage_preference_subject_off_12"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 첫 번째 리사이클러뷰 -->
+    <!-- 이미지/별점/평점 -->
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="176dp"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/home2_image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/home2_recycler_image"
+                android:layout_width="145dp"
+                android:layout_height="176dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/poster2" />
+
+            <ImageView
+                android:id="@+id/black_background"
+                android:layout_width="145dp"
+                android:layout_height="176dp"
+                android:scaleType="centerCrop"
+                android:background="#50000000" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/home2_recycler_star"
+                    android:layout_width="100dp"
+                    android:layout_height="7.7dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/main_star_full" />
+
+                <TextView
+                    android:id="@+id/home2_recyler_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#ffffff"
+                    android:textSize="32dp"
+                    tools:text="3.3" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!-- 제목/날짜/장소 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:id="@+id/home2_layout"
+            android:layout_toRightOf="@+id/home2_image_layout">
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/home2_recycler_title"
+                android:layout_width="200dp"
+                android:ellipsize="end"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="19dp"
+                android:textColor="#393939"
+                android:textSize="16dp"
+                tools:text="바람을 그리다 : 신육복, 정선" />
+
+            <TextView
+                android:id="@+id/home2_recycler_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/home2_recycler_title"
+                android:layout_below="@+id/home2_recycler_title"
+                android:textColor="#393939"
+                android:textSize="13dp"
+                tools:text="2017.11.11" />
+
+            <TextView
+                android:id="@+id/home2_recycler_jump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home2_recycler_title"
+                android:layout_toRightOf="@+id/home2_recycler_start_date"
+                android:text=" ~ "
+                android:textColor="#393939"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/home_recycler2_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home2_recycler_title"
+                android:layout_toRightOf="@+id/home2_recycler_jump"
+                android:text="2017.11.11"
+                android:textColor="#393939"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/home2_recycler_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home2_recycler_start_date"
+                android:textColor="#393939"
+                android:textSize="13dp"
+                tools:text="미술관이름" />
+
+
+        </RelativeLayout>
+
+        <!-- 도슨트/좋아요 버튼 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/home2_image_layout">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/imageView2"
+                android:background="#95989a" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0.3dp"
+                android:layout_height="39dp"
+                android:layout_alignBottom="@+id/home2_recycler_docent"
+                android:layout_toRightOf="@+id/home2_recycler_docent"
+                android:background="#95989a" />
+
+            <Button
+                android:id="@+id/home2_recycler_docent"
+                android:layout_width="107dp"
+                android:layout_height="39dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/btn_main_docent" />
+
+            <Button
+                android:id="@+id/home2_recycler_heart"
+                android:layout_width="107dp"
+                android:layout_height="39dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/home2_recycler_docent"
+                android:background="@drawable/btn_main_like_off" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

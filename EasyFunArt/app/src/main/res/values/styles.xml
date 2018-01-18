@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FCDC09</item>
+        <item name="colorPrimaryDark">#FCDC09</item>
+        <item name="colorAccent">#FCDC09</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Main 도슨트 검색 EditText -->
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="colorControlNormal">#FCDC09</item>
+        <item name="colorControlActivated">#FCDC09</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:background">@drawable/spinner_style</item>
+    </style>
+
+</resources>

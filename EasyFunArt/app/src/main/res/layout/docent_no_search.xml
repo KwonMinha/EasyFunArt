@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center">
+
+    <ImageView
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/dialog_heart_image"
+        android:layout_width="58.77dp"
+        android:layout_height="51.04dp"
+        android:src="@drawable/search_no_answer"/>
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/dialog_heart_image"
+        android:id="@+id/dialog_heart_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/dialog_heart_image"
+        android:id="@+id/dialog_heart_title2"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="해당하는 일련번호가 없습니다 :-("
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+
+</RelativeLayout>

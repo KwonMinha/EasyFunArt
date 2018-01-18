@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:id="@+id/layout"
+    android:layout_marginBottom="20dp"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_layout">
+
+        <ImageView
+            android:layout_width="145dp"
+            android:layout_height="176dp"
+            android:src="@drawable/poster2"
+            android:scaleType="centerCrop"
+            android:id="@+id/recomend_recycler_image"/>
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_star_full"
+                android:id="@+id/recomend_recycler_star"/>
+
+            <TextView
+                android:id="@+id/recomend_recyler_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                tools:text="3.3"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/image_layout">
+
+        <TextView
+            android:layout_marginTop="19dp"
+            android:id="@+id/recomend_recycler_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="바람을 그리다 : 신육복, 정선"
+            android:textColor="#393939"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_alignLeft="@+id/recomend_recycler_title"
+            android:layout_below="@+id/recomend_recycler_title"
+            android:id="@+id/recomend_recycler_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="2017.11.11"
+            android:textColor="#393939"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_alignLeft="@+id/recomend_recycler_title"
+            android:layout_below="@+id/recomend_recycler_date"
+            android:id="@+id/recomend_recycler_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="미술관이름"
+            android:textColor="#393939"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@color/colorPrimaryLight"
+            android:layout_above="@+id/recomend_recycler_docent"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp" />
+
+        <ImageView
+            android:background="@color/colorPrimaryLight"
+            android:layout_alignBottom="@+id/recomend_recycler_docent"
+            android:layout_toRightOf="@+id/recomend_recycler_docent"
+            android:layout_width="0.8dp"
+            android:layout_height="39dp" />
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:id="@+id/recomend_recycler_docent"
+            android:layout_width="107.5dp"
+            android:layout_height="39dp"
+            android:background="@drawable/main_heart_on" />
+
+        <Button
+            android:layout_toRightOf="@+id/recomend_recycler_docent"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/recomend_recycler_heart"
+            android:layout_width="107.5dp"
+            android:layout_height="39dp"
+            android:background="@drawable/main_heart_off" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

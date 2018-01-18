@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Activity.WriteReview">
+
+    <RelativeLayout
+        android:id="@+id/review_write_topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent">
+        
+        <Button
+            android:id="@+id/review_write_backBtn"
+            android:layout_marginLeft="18.61dp"
+            android:layout_centerVertical="true"
+            android:layout_width="17dp"
+            android:layout_height="24dp"
+            android:background="@drawable/mypage_backbutton"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="#252525"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="리뷰 작성"
+            android:textSize="17dp"
+            android:id="@+id/review_write_textView" />
+
+        <Button
+            android:id="@+id/review_write_ok"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="22.95dp"
+            android:layout_height="24dp"
+            android:background="@drawable/detail_reviewwrite_ok"
+            android:layout_marginRight="18.61dp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="#252525"
+        android:id="@+id/review_wirte_ex_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="22dp"
+        android:text="관람한 전시"
+        android:layout_below="@+id/review_write_topLayout"
+        android:textSize="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:id="@+id/review_write_layout1"
+        android:background="#ececec"
+        android:layout_below="@+id/review_wirte_ex_text">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="18dp"
+            android:id="@+id/review_write_img"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_below="@+id/b"
+            tools:src="@drawable/ic_launcher_background"
+            />
+        <TextView
+            android:textColor="#252525"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/review_write_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="요나스 : 찰나,힐긋, 돌아보다."
+            android:layout_toRightOf="@+id/review_write_img"
+            android:textSize="17dp"
+            />
+
+        <TextView
+            android:id="@+id/review_write_place"
+            android:textColor="#414141"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/review_write_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/review_write_title"
+            android:text="서울시립미술관"
+            android:textSize="11dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/review_write_star_layout"
+        android:layout_below="@+id/review_write_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="#252525"
+            android:layout_marginLeft="22dp"
+            android:id="@+id/review_write_star_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="평점"
+            android:textSize="15dp"
+            />
+
+        <RatingBar
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/review_write_star_text"
+            style="@style/starRatingBar"
+            android:layout_marginLeft="21dp"
+            android:id="@+id/ratingbar2"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:rating="5"
+            android:stepSize="0.5" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/review_write_line1"
+        android:layout_below="@+id/review_write_star_layout"
+        android:layout_width="400dp"
+        android:layout_height="0.3dp"
+        android:background="#95989a"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/review_write_line1"
+        android:id="@+id/review_write_date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:textColor="#252525"
+            android:id="@+id/review_write_date_title"
+            android:layout_marginLeft="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="날짜"
+            android:textSize="15dp"
+            />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/review_write_date_title"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_alignLeft="@+id/review_write_date"
+                android:id="@+id/imageView"
+                android:layout_width="140dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="28dp"
+                android:background="#FCDC09" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/review_write_date"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="날짜를 선택해주세요."
+                android:layout_marginTop="13dp"
+                android:textSize="13dp"
+                android:textColor="#95989A"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/review_write_date"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/detail_reviewwrite_date"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/review_write_line2"
+        android:layout_below="@+id/review_write_date_layout"
+        android:layout_width="400dp"
+        android:layout_height="0.3dp"
+        android:background="#95989a"/>
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/review_write_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#252525"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="22dp"
+            android:id="@+id/review_write_review_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="리뷰"
+            android:textSize="15dp"
+            />
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/review_write_review_title"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:textColor="#414141"
+                android:id="@+id/review_write_content"
+                android:layout_width="330dp"
+                android:layout_height="180dp"
+                android:background="#ECECEC"/>
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:layout_below="@+id/review_write_content"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/review_write_camera"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/detail_reviewwrite_camera"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/review_write_camera"
+                    android:id="@+id/review_write_gallery"
+                    android:background="@drawable/detail_reviewwrite_gallery"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

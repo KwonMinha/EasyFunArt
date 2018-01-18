@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="easyfunart.easyfunart.Activity.DisplayActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/display_info2_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="parallax"
+                android:fitsSystemWindows="true">
+
+                <ImageView
+                    android:id="@+id/display_imageView"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_height="170dp"
+                    android:src="@drawable/poster" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="#90000000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/display_title"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="100dp"
+                    android:text="요나스 메카스\n: 찰나, 힐긋, 돌아보다"
+                    android:textColor="#ffffff"
+                    android:textSize="24dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp"
+                    android:background="#ffffff"
+                    android:layout_below="@+id/display_imageView">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="26dp"
+                        android:id="@+id/display_date"
+                        android:text="2017.09.14"
+                        android:textColor="#414141"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/display_date"
+                        android:layout_marginTop="26dp"
+                        android:id="@+id/display_date_wave_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" ~ "
+                        android:textColor="#414141"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_toRightOf="@+id/display_date_wave_sign"
+                        android:layout_marginTop="26dp"
+                        android:id="@+id/display_date2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2018.03.04"
+                        android:textColor="#414141"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_below="@+id/display_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#414141"
+                        android:textSize="14dp"
+                        android:text="국립현대미술관 서울관"
+                        android:id="@+id/display_place"/>
+
+                    <!--나의 평점-->
+                    <RelativeLayout
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@+id/display_avg_score_layout"
+                        android:id="@+id/my_score_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/display_bg_my_star"
+                            android:layout_width="63dp"
+                            android:layout_height="63dp"
+                            android:src="@drawable/detailpg_mystar" />
+
+                        <RelativeLayout
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/display_myScore_title"
+                                android:textColor="#414141"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="나의 평점"
+                                android:textSize="9dp" />
+
+                            <TextView
+                                android:layout_below="@+id/display_myScore_title"
+                                android:id="@+id/my_score"
+                                android:textColor="#414141"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+                                android:textSize="20dp"
+                                android:textStyle="bold"  />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    !--평균평점-->
+                    <RelativeLayout
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/display_avg_score_layout">
+
+                        <ImageView
+                            android:id="@+id/display_bg_all_star"
+                            android:layout_width="63dp"
+                            android:layout_height="63dp"
+                            android:background="@drawable/detailpg_allstar" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <TextView
+                                android:id="@+id/display_avgScore_title"
+                                android:textColor="#414141"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="평균 평점"
+                                android:textSize="9dp" />
+
+                            <TextView
+                                android:layout_below="@+id/display_avgScore_title"
+                                android:id="@+id/all_score"
+                                android:textColor="#414141"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:contentInsetLeft="0dp"
+                android:contentInsetStart="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                android:contentInsetRight="0dp"
+                android:contentInsetEnd="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_centerVertical="true"
+                        android:id="@+id/display_back_button"
+                        android:layout_width="12dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/detailpg_back" />
+
+
+                    <Button
+                            android:visibility="gone"
+                        android:layout_centerVertical="true"
+                        android:layout_width="27.6dp"
+                        android:layout_height="24dp"
+                        android:layout_toLeftOf="@+id/display_share_button"
+                        android:id="@+id/display_heart"
+                        android:background="@drawable/detailpg_heart_off"
+                        />
+
+                    <Button
+                        android:layout_centerVertical="true"
+                        android:id="@+id/display_share_button"
+                        android:layout_marginRight="17.8dp"
+                        android:layout_width="20.65dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="12.08dp"
+                        android:background="@drawable/detailpg_share" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_display_info" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:weightSum="2"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/display_star_button"
+                android:background="@drawable/detailpg_reviewcheckbutton"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/display_audio_button"
+                android:background="@drawable/detailpg_audioguide"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

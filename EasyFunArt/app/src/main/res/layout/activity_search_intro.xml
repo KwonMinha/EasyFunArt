@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="easyfunart.easyfunart.Activity.SearchIntroActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_img"
+        android:scaleType="centerCrop"
+        android:src="@drawable/search_bg"/>
+
+    <ImageView
+        android:layout_alignLeft="@+id/line"
+        android:layout_marginTop="50dp"
+        android:layout_width="172dp"
+        android:layout_height="88dp"
+        android:id="@+id/search_intro_title"
+        android:src="@drawable/search_intro_title"/>
+
+    <ImageView
+        android:layout_alignLeft="@+id/line"
+        android:layout_marginTop="27.82dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@+id/search_intro_editText"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/search_intro_search"
+        android:src="@drawable/search_button"/>
+    
+    <ImageView
+        android:id="@+id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/search_intro_title"
+        android:layout_marginTop="49dp"
+        android:layout_width="300dp"
+        android:layout_height="1.5dp"
+        android:background="#ffffff"/>
+
+    <EditText
+        android:singleLine="true"
+        android:layout_marginLeft="25dp"
+        android:layout_alignLeft="@+id/line"
+        android:id="@+id/search_intro_editText"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:background="@null"
+        android:cursorVisible="@drawable/cursor_color"
+        android:layout_width="300dp"
+        android:layout_alignBottom="@+id/line"
+        android:layout_height="40dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_img"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_ex_img"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/search_look_for_exhibition"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_below="@+id/search_ex_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EASY FUN ART가\n당신의 전시를 찾아드릴게요"
+                android:textSize="13dp"
+                android:textColor="#676767"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>

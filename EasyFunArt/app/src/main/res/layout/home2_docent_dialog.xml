@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="342dp"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/dialog_docent_topText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="AUDIO GUIDE"
+            android:textColor="#1f1f1f" />
+
+        <Button
+            android:layout_centerVertical="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/docentplaying_cancel"
+            android:id="@+id/dialog_docent_xButton"
+            android:layout_marginRight="11.5dp"
+            android:layout_marginTop="14.5dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@id/layout"
+        android:id="@+id/imageLayout"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="240dp"
+            android:layout_height="200dp"
+            android:src="@drawable/test"
+            android:id="@+id/dialog_docent_image"/>
+
+        <Button
+            android:layout_centerInParent="true"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:background="@drawable/btn_popup_docentdirect"/>
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="200dp"
+            android:background="#50000000"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_docent_title"
+        android:text="요나스 메카스 : 찰나, 힐긋, 돌아보다 "
+        android:layout_marginTop="12.48dp"
+        android:layout_below="@+id/imageLayout"
+        android:textColor="#2d2d2d"
+        android:layout_marginLeft="16.32dp"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_docent_place"
+        android:layout_marginLeft="17dp"
+        android:text="국립현대미술관 서울관"
+        android:layout_below="@+id/dialog_docent_title"
+        android:textColor="#828282"
+        android:layout_marginBottom="30dp"
+        android:textSize="11dp"/>
+
+    <Button
+        android:id="@+id/dialog_docent_ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="자세히 보기"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:textSize="15dp"
+        android:textColor="#1f1f1f"/>
+
+</RelativeLayout>

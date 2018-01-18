@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="220dp"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48.65dp"
+        android:id="@+id/button_set"
+        >
+
+        <!--<Button-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginRight="3.88dp"-->
+        <!--android:background="@mipmap/ic_launcher"-->
+        <!--android:id="@+id/home2_star1"/>-->
+
+        <!--<Button-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginRight="3.88dp"-->
+        <!--android:layout_toRightOf="@+id/home2_star1"-->
+        <!--android:background="@mipmap/ic_launcher"-->
+        <!--android:id="@+id/home2_star2"/>-->
+
+        <!--<Button-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginRight="3.88dp"-->
+        <!--android:layout_toRightOf="@id/home2_star2"-->
+        <!--android:background="@mipmap/ic_launcher"-->
+        <!--android:id="@+id/home2_star3"/>-->
+
+        <!--<Button-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginRight="3.88dp"-->
+        <!--android:layout_toRightOf="@id/home2_star3"-->
+        <!--android:background="@mipmap/ic_launcher"-->
+        <!--android:id="@+id/home2_star4"/>-->
+
+        <!--<Button-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_toRightOf="@id/home2_star4"-->
+        <!--android:background="@mipmap/ic_launcher"-->
+        <!--android:id="@+id/home2_star5"/>-->
+
+
+        <RatingBar style="@style/starRatingBar"
+            android:id="@+id/ratingbar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:rating="5"
+            android:stepSize="0.5" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/button_set"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="제목이다"
+        android:textColor="#1F1F1F"
+        android:id="@+id/dialog_evaluation_title"
+        android:textSize="15dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@+id/dialog_evaluation_title"
+        android:textSize="13dp"
+        android:text="평점을 입력해주세요"
+        android:textColor="#1f1f1f"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="확인"
+        android:id="@+id/dialog_evaluation_ok"
+        android:layout_alignParentBottom="true"
+        android:textColor="#1f1f1f"
+        android:background="#FCDC09"/>
+
+</RelativeLayout>

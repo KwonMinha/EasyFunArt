@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--동그라미-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_taste_step1"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+    </RelativeLayout>
+    <!--정보선택-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="28.8dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_taste_info"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mood_text_id_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="28.8dp"
+            android:layout_marginTop="16.64dp"
+            android:text="EASY FUN ART가 취향에 딱맞는 추천을 해드릴게요"
+            android:textColor="#95989A"
+            android:textSize="11dp"></TextView>
+    </LinearLayout>
+
+    <!--닉네임-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닉네임"
+            android:textSize="20dp"
+            android:textColor="#414141"
+
+            android:layout_marginLeft="28.8dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:textColor="#414141"
+            android:id="@+id/editNickname"
+            android:layout_width="180dp"
+            style="@style/EditTextStyle"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:maxLength="10"
+
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nicknameok"
+            />
+    </LinearLayout>
+
+    <!--성별-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="성별"
+            android:textSize="20dp"
+            android:textColor="#414141"
+            android:layout_marginLeft="28.8dp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/result2_womanButton_btn"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="101.76dp"
+            android:background="@drawable/prefrence_information_girl_off"/>
+        <Button
+            android:id="@+id/result2_manButton_btn"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/prefrence_information_boy_off"/>
+    </LinearLayout>
+
+
+    <!--성별버튼-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여자"
+            android:textColor="#414141"
+            android:layout_marginLeft="121.92dp"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="남자"
+            android:textColor="#414141"
+            android:layout_marginLeft="58.56dp"
+            android:textSize="13dp"/>
+    </LinearLayout>
+
+    <!--연령대 텍스트-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="연령대"
+            android:textSize="20dp"
+            android:textColor="#414141"
+            android:layout_marginLeft="28.8dp"
+            android:layout_marginTop="14dp"/>
+    </LinearLayout>
+
+    <!--연령대 버튼 10 20 30-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/result2_ageButton10_btn"
+            android:layout_width="83dp"
+            android:layout_height="35dp"
+            android:background="@drawable/prefrence_information_10_off"
+            android:layout_marginTop="14.52dp"
+            android:layout_marginLeft="41.28dp"/>
+
+        <Button
+            android:id="@+id/result2_ageButton20_btn"
+
+            android:layout_width="83dp"
+            android:layout_height="35dp"
+            android:background="@drawable/prefrence_information_20_off"
+            android:layout_marginTop="14.52dp"
+            android:layout_marginLeft="10.38dp"/>
+
+        <Button
+            android:id="@+id/result2_ageButton30_btn"
+            android:layout_width="83dp"
+            android:layout_height="35dp"
+            android:background="@drawable/prefrence_information_30_off"
+            android:layout_marginTop="14.52dp"
+            android:layout_marginLeft="10.38dp"/>
+    </LinearLayout>
+
+    <!--연령대 버튼 40 50 60-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/result2_ageButton40_btn"
+            android:layout_width="83dp"
+            android:layout_height="35dp"
+            android:background="@drawable/prefrence_information_40_off"
+
+            android:layout_marginLeft="41.28dp"/>
+
+        <Button
+            android:id="@+id/result2_ageButton50_btn"
+
+            android:layout_width="83dp"
+            android:layout_height="35dp"
+            android:background="@drawable/prefrence_information_50_off"
+
+            android:layout_marginLeft="10.38dp"/>
+
+        <Button
+            android:id="@+id/result2_ageButton60_btn"
+            android:layout_width="83dp"
+            android:layout_height="35dp"
+            android:background="@drawable/prefrence_information_60_off"
+            android:layout_marginLeft="10.38dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/result2_nextButton_btn"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:padding="20dp"
+            android:layout_marginTop="20.08dp"
+            android:layout_marginLeft="314.8dp"
+            android:background="@drawable/prefrence_information_nextpage"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/top_layout"
+    android:fitsSystemWindows="true"
+    android:background="#f8f9fa"
+    tools:context=".Activity.HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f8f9fa"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_collapseMode="pin" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/main_bg" />
+
+                <RelativeLayout
+                    android:id="@+id/main_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="44dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="298dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/main_docentbg"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/main_headset"
+                            android:layout_width="19dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/main_docenticon" />
+
+                        <EditText
+                            android:singleLine="true"
+                            android:imeOptions="actionSearch"
+                            android:inputType="text"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="14dp"
+                            android:layout_toRightOf="@+id/main_headset"
+                            android:background="@null"
+                            android:id="@+id/main_editText"
+                            android:cursorVisible="@drawable/cursor_color"
+                            android:hint="도슨트를 위한 일련번호를 입력해주세요."
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/main_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="23.58dp"
+                    android:paddingLeft="22dp"
+                    android:clipToPadding="false"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:id="@+id/tabbar"
+            android:layout_height="49dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp">
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46.72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/tabbar">
+
+            <Button
+                android:id="@+id/tabbar_docent_home"
+                android:layout_width="46.08dp"
+                android:layout_height="46.72dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/maintap_tap_docent_off" />
+
+            <Button
+                android:id="@+id/tabbar_recommend_home"
+                android:layout_width="46.08dp"
+                android:layout_height="46.72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24.96dp"
+                android:layout_toLeftOf="@+id/tabbar_docent_home"
+                android:background="@drawable/maintap_tap_like_off" />
+
+            <Button
+                android:id="@+id/tabbar_home_home"
+                android:layout_width="46.08dp"
+                android:layout_height="46.72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24.96dp"
+                android:layout_toLeftOf="@+id/tabbar_recommend_home"
+                android:background="@drawable/maintap_tap_home_on" />
+
+            <Button
+                android:id="@+id/tabbar_search_home"
+                android:layout_width="46.08dp"
+                android:layout_height="46.72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24.96dp"
+                android:layout_toRightOf="@id/tabbar_docent_home"
+                android:background="@drawable/maintap_tap_search_off" />
+
+            <Button
+                android:id="@+id/tabbar_mypage_home"
+                android:layout_width="46.08dp"
+                android:layout_height="46.72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25.97dp"
+                android:layout_toRightOf="@id/tabbar_search_home"
+                android:background="@drawable/maintap_tap_mypage_off" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

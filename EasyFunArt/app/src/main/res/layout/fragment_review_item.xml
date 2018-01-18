@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="330dp"
+        android:layout_height="0.5dp"
+        android:layout_centerHorizontal="true"
+        android:background="#95989a" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/review_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="16dp"
+        tools:src="@drawable/pic1" />
+
+    <RelativeLayout
+        android:id="@+id/review_name_star_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@+id/review_profile">
+
+        <TextView
+            android:id="@+id/review_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#7a7a7a"
+            android:textSize="11dp"
+            tools:text="홍주영" />
+
+        <ImageView
+            android:id="@+id/review_star"
+            android:layout_width="50dp"
+            android:layout_height="9.5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/review_name"
+            tools:src="@drawable/detail_review_star_5" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_alignLeft="@+id/review_name_star_layout"
+        android:id="@+id/review_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/review_name_star_layout"
+        android:textColor="#7a7a7a"
+        android:textSize="11dp"
+        tools:text="2017.12.27" />
+
+    <TextView
+        android:layout_marginLeft="3dp"
+        android:layout_alignBottom="@+id/review_date"
+        android:id="@+id/review_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/review_date"
+        android:text="관람"
+        android:textColor="#7a7a7a"
+        android:textSize="11dp" />
+
+    <TextView
+        android:textColor="#414141"
+        android:id="@+id/review_content"
+        android:layout_below="@+id/review_date"
+        android:layout_toRightOf="@id/review_profile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:lineSpacingMultiplier="1.1"
+        android:layout_width="260dp"
+        tools:text="시적 순간의 생명력으로"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"/>
+
+    <ImageView
+        tools:src="@drawable/test"
+        android:id="@+id/review_content_img"
+        android:scaleType="centerCrop"
+        android:layout_width="260dp"
+        android:layout_height="125dp"
+        android:visibility="gone"
+        android:layout_alignLeft="@+id/review_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/review_content"/>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/review_content_img"
+        android:layout_alignLeft="@+id/review_content"
+        android:layout_marginTop="3dp"
+        android:gravity="right"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:textColor="#414141"
+            android:id="@+id/review_date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="11dp"
+            tools:text="2017. 12. 29"
+            />
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/review_date2"
+            android:textSize="11dp"
+            android:textColor="#414141"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작성"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

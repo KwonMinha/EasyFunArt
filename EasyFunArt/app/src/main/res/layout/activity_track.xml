@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TrackActivity"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="180dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/finish_yet_Image"/>
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fcdc09"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Audio Guide"
+            android:background="#fcdc09"
+            android:textColor="#252525"
+            android:textSize="22dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/audio_guide"
+            />
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:foregroundGravity="right"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/docent_playing_button"
+            android:id="@+id/detail_page_button"/>
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/trackList_reyclerview"
+        android:layout_below="@+id/toolbar">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>

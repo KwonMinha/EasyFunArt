@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SearchActivity"
+    android:background="#95989a">
+
+    <RelativeLayout
+        android:id="@+id/up"
+        android:background="#fcdc09"
+        android:orientation="horizontal"
+        android:padding="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#252525"
+            android:textSize="8pt"
+            android:layout_centerInParent="true"
+            android:text="설정"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/up"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:paddingTop="16dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="16dp"
+                android:src="@drawable/btn_setting_icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#414141"
+                android:textSize="7pt"
+                android:paddingTop="18dp"
+                android:text="이용약관"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:paddingTop="16dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="16dp"
+                android:src="@drawable/btn_setting_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#414141"
+                android:textSize="7pt"
+                android:paddingTop="18dp"
+                android:text="개인 정보 취급 방침"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:paddingTop="16dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="16dp"
+                android:src="@drawable/btn_setting_icon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#414141"
+                android:textSize="7pt"
+                android:paddingTop="18dp"
+                android:text="위치 서비스 이용약관"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:background="#ececec"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:textColor="#414141"
+                android:textSize="7pt"
+                android:id="@+id/logout_btn"
+                android:background="#ffffff"
+                android:text="로그아웃"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="#ffffff"></LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

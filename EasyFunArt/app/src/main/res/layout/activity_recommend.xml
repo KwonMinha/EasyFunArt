@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    tools:context=".Activity.RecommendActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="#fcdc09">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="맞춤 추천"
+            android:background="#fcdc09"
+            android:textColor="#252525"
+            android:textSize="17dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#95989a"
+        android:layout_above="@id/tabbar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabbar"
+        android:id="@+id/recomend_recyclerView"
+        android:layout_below="@id/toolbar">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/tabbar"
+        android:layout_height="49dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46.72dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/tabbar_docent_reco"
+                android:layout_width="46.08dp"
+                android:layout_height="46.72dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/maintap_tap_docent_off" />
+
+            <Button
+                android:id="@+id/tabbar_recommend_reco"
+                android:layout_width="46.08dp"
+                android:layout_height="46.72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24.96dp"
+                android:layout_toLeftOf="@+id/tabbar_docent_reco"
+                android:background="@drawable/maintap_tap_like_on" />
+
+            <Button
+                android:id="@+id/tabbar_home_reco"
+                android:layout_width="46.08dp"
+                android:layout_height="46.72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24.96dp"
+                android:layout_toLeftOf="@+id/tabbar_recommend_reco"
+                android:background="@drawable/maintap_tap_home_off" />
+
+            <Button
+                android:id="@+id/tabbar_search_reco"
+                android:layout_width="46.08dp"
+                android:layout_height="46.72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24.96dp"
+                android:layout_toRightOf="@id/tabbar_docent_reco"
+                android:background="@drawable/maintap_tap_search_off" />
+
+            <Button
+                android:id="@+id/tabbar_mypage_reco"
+                android:layout_width="46.08dp"
+                android:layout_height="46.72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25.97dp"
+                android:layout_toRightOf="@id/tabbar_search_reco"
+                android:background="@drawable/maintap_tap_mypage_off" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

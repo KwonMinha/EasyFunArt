@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlwaysCollapsed"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_marginTop="15dp"
+                android:id="@+id/write_review"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/detailpg_reviewwrite"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"/>
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/bar"
+                android:layout_below="@+id/write_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#414141"
+                    android:id="@+id/real_score"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4.2"
+                    android:layout_marginLeft="52dp"
+                    android:textSize="34dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#414141"
+                    android:text="125명"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_below="@+id/real_score"
+                    android:id="@+id/textView2" />
+                <TextView
+                    android:textColor="#414141"
+                    android:id="@+id/score_design"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="평균 평점"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="53dp" />
+                <ImageView
+                    android:id="@+id/star5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/detail_review_star_five"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/star4"
+                    android:layout_alignEnd="@+id/star4" />
+                <ImageView
+                    android:id="@+id/star4"
+                    android:layout_below="@+id/star5"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:background="@drawable/detail_review_star_four"/>
+                <ImageView
+                    android:id="@+id/star3"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:src="@drawable/detail_review_star_three"
+                    android:layout_below="@+id/star4"
+                    android:layout_alignRight="@+id/star4"
+                    android:layout_alignEnd="@+id/star4" />
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:src="@drawable/detail_review_star_two"
+                    android:layout_below="@+id/star3"
+                    android:layout_alignRight="@+id/star3"
+                    android:layout_alignEnd="@+id/star3" />
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:src="@drawable/detail_review_star_one"
+                    android:layout_below="@+id/star2"
+                    android:layout_alignRight="@+id/star4"
+                    android:layout_alignEnd="@+id/star4" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:nestedScrollingEnabled="false"
+                android:layout_below="@+id/bar"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/review_recylerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60dp"
+                />
+        </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.GalleryListActivity"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fcdc09">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="도슨트"
+                android:background="#fcdc09"
+                android:textColor="#252525"
+                android:textSize="18dp" />
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ffffff"
+            android:id="@+id/main2_tab"
+            android:layout_alignParentBottom="true">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내 주변 전시"
+                android:id="@+id/first_tab"
+                />
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="찜한 전시"
+                android:id="@+id/second_tab"
+                />
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main2_viewPager"
+            android:layout_above="@+id/main2_viewPager">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/tabbar"
+        android:layout_height="49dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46.72dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/tabbar_docent_g"
+                android:layout_width="46.08dp"
+                android:layout_height="46.72dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/maintap_tap_docent_on" />
+
+            <Button
+                android:id="@+id/tabbar_recommend_g"
+                android:layout_width="46.08dp"
+                android:layout_height="46.72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24.96dp"
+                android:layout_toLeftOf="@+id/tabbar_docent_g"
+                android:background="@drawable/maintap_tap_like_off" />
+
+            <Button
+                android:id="@+id/tabbar_home_g"
+                android:layout_width="46.08dp"
+                android:layout_height="46.72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24.96dp"
+                android:layout_toLeftOf="@+id/tabbar_recommend_g"
+                android:background="@drawable/maintap_tap_home_off" />
+
+            <Button
+                android:id="@+id/tabbar_search_g"
+                android:layout_width="46.08dp"
+                android:layout_height="46.72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24.96dp"
+                android:layout_toRightOf="@id/tabbar_docent_g"
+                android:background="@drawable/maintap_tap_search_off" />
+
+            <Button
+                android:id="@+id/tabbar_mypage_g"
+                android:layout_width="46.08dp"
+                android:layout_height="46.72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25.97dp"
+                android:layout_toRightOf="@id/tabbar_search_g"
+                android:background="@drawable/maintap_tap_mypage_off" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>
